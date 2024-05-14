@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.loader-bg {
+  height: 100vh;
+  background: url("/images/bg.jpg");
+  background-size: cover;
+  padding-top: 23%;
+}
+
+
+.loader {
+  animation: spinningColor 1.1s ease-in-out infinite;
+  margin: auto;
+  border: 15px double #ffffff;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+@keyframes spinningColor {
+  0% {
+    transform: rotate(360deg);
+    border-top:15px dashed #0bc1ee;
+    border-bottom:15px dashed #1265c4;
+  }
+  25% {
+    border-top:15px dashed #0bc1ee;
+    border-bottom:15px dashed #6da7f7;
+  }
+  50% {
+    border-top:15px dashed #0bc1ee;
+    border-bottom:15px dashed #4ba3ff;
+  }
+  75% {
+    border-top:15px dashed #0bc1ee;
+    border-bottom:15px dashed #569dff;
+  }
+  100% {
+    border-top:15px dashed #0bc1ee;
+    border-bottom:15px dashed #387eff;
+  }
+}
+
+.blue-1{
+  color: #1265c4;
+}
+.blue-2{
+  color: #21afda;
+}
+.bg-grey{
+  background-color: rgba(8, 77, 92, 0.233);;
+}
+.shadow-left{
+  box-shadow: -8px -1px 27px -13px rgba(0,0,0,0.75);
+  -webkit-box-shadow: -8px -1px 27px -13px rgba(0,0,0,0.75);
+  -moz-box-shadow: -8px -1px 27px -13px rgba(0,0,0,0.75);
+}
+
+.software-release-row{
+  border: 1px solid silver;
+  padding: 20px;
+  border-radius: 5px;
+}
+.software-release-row:hover{
+  cursor: pointer;
+  transition-duration: 300ms;
+  background-color: rgba(119, 154, 201, 0.322);
+}
+
+.tableFixHead thead th {
+  transition-duration: 300ms;
+  font-size: 12px;
+  position: sticky;
+  top: 0;
+  background-color: rgb(243, 243, 243);
+  z-index: 1;
+}
+.tableFixHead thead{
+  border: 1px solid rgb(232, 232, 232);
+  border-radius: 25px!important;
+  color: grey;
+}
+.tableData{
+  font-size: 12px;
+}
+.searchInput{
+  border: 1px solid gray;
+  outline-color: none !important;
+  box-shadow: none !important;
+}
+.searchInput:focus{
+  border: none;
+  border-color: none;
+}
+.btn-custom{
+  background-color:rgb(66, 173, 211)!important;
+  color: white;
+  border-radius: 15px;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+.btn-custom:hover{
+  background-color:rgb(67, 157, 190)!important;
+  color: white;
+  border-radius: 15px;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+}
